@@ -19,6 +19,10 @@ public class Usuario
         alimentoComido=null;
         cantidadComida=0;
     }
+    public String getNombre()
+    {
+        return nombreUsuario;
+    }
 
     /**
      * Metodo comer que simula la accion de que el usuario come un tipo de objeto de la clase alimento con una determinada cantidad.
@@ -40,4 +44,20 @@ public class Usuario
         System.out.println("Gramos de grasas ingeridos"+":"+" "+dato1.getGrasas()+" "+"("+ porcentajeSobreTotalGrasas +")");
         System.out.println("Calorias ingeridas"+":"+" "+dato1.getCalorias());
     }
+    //metodo que compara las calorias de  el alimento1 comido por un usuario y el alimento 2 comido por otro usuario 
+    public void comparar(Usuario usuario1,Alimento alimento1, Usuario usuario2,Alimento alimento2)
+    {
+        //si el alimento 1 tiene mas ccalorias que el alimento 2
+        if (alimento1.getCalorias()>alimento2.getCalorias())
+        {
+            
+            System.out.println("El usuario"+" "+ usuario1.getNombre()+ "ha consumido mas calorias que el usuario "+usuario2.getNombre());
+        }
+        // si el alimento 2 tiene mas calorias que el alimento 1
+        else
+        {
+            System.out.println("El usuario"+" "+ usuario2.getNombre()+" ha consumido mas calorias que el usuario "+usuario1.getNombre());
+        }
+    }
+    
 }
