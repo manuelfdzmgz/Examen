@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.params=nombreUsuario
 comment0.target=Usuario(java.lang.String)
-comment0.text=\r\n\ \r\n
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ usuario\r\n
 comment1.params=nombreAlimento\ cantidad
 comment1.target=void\ comer(java.lang.String,\ float)
-comment1.text=\r\n\ \r\n
-numComments=2
+comment1.text=\r\n\ Metodo\ comer\ que\ simula\ la\ accion\ de\ que\ el\ usuario\ come\ un\ tipo\ de\ objeto\ de\ la\ clase\ alimento\ con\ una\ determinada\ cantidad.\r\n
+comment2.params=dato
+comment2.target=void\ getstadoUsuario(Alimento)
+numComments=3

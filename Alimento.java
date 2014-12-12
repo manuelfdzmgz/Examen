@@ -1,6 +1,6 @@
 
 /**
- * 
+ * Simula la clase alimento con sus atribuos de nombre numero de proteinas carbohidratos grasas y numero de calorias
  */
 public class Alimento
 {
@@ -16,7 +16,7 @@ public class Alimento
     private float calorias;
 
     /**
-     * Constructor for objects of class Alimento
+     * Constructor de la clase alimento
      */
     public Alimento(String nombreAlimento, float gramosProteinas, float carbohidratos, float grasas, float calorias)
     {
@@ -26,22 +26,42 @@ public class Alimento
         this.grasas=grasas;
         this.calorias=calorias;
     }
+
+    /*
+     * Metodo que retorna el valor de gramos de proteinas
+     */
     public float getGramosProteinas()
     {
         return gramosProteinas;
     }
+
+    /*
+     * Metodo que retorna el valor de carbohidratos
+     */
     public float getCarbohidratos()
     {
         return carbohidratos;
     }
+
+    /*
+     * Metodo que retorna el valor de las grasas del alimento
+     */
     public float getGrasas()
     {
         return grasas;
     }
+
+    /*
+     * Metodo que retorna el valor de las calorias
+     */
     public float getCalorias()
     {
         return calorias;
     }
+
+    /*
+     * Metodo que imprime por pantalla los valores de los atributos nombre grasas carbohidratos...
+     */
     public void muestraDatos()
     {
         System.out.println("####"+"El nombre del alimento es"+ nombreAlimento+"####");
@@ -67,5 +87,5 @@ public class Alimento
             System.out.println("####"+"No hay un componente mayoritario en este alimento"+"####");
         }
     }
-    
+
 }
