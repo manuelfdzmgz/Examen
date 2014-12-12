@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=nombreUsuario
+comment0.target=Usuario(java.lang.String)
+comment0.text=\r\n\ \r\n
+comment1.params=nombreAlimento\ cantidad
+comment1.target=void\ comer(java.lang.String,\ float)
+comment1.text=\r\n\ \r\n
+numComments=2
