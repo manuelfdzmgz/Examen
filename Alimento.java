@@ -14,6 +14,7 @@ public class Alimento
     private float grasas;
     //calorias del alimento
     private float calorias;
+    private float cantidadNutrientes;
 
     /**
      * Constructor de la clase alimento
@@ -25,6 +26,7 @@ public class Alimento
         this.carbohidratos=carbohidratos;
         this.grasas=grasas;
         this.calorias=calorias;
+        cantidadNutrientes= carbohidratos+grasas+gramosProteinas;
     }
 
     /*
@@ -57,6 +59,13 @@ public class Alimento
     public float getCalorias()
     {
         return calorias;
+    }
+    /*
+     * Retorna el valor total de nutrientes
+     */
+    public float getCantidadNutrientes()
+    {
+        return cantidadNutrientes;
     }
 
     /*
