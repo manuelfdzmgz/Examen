@@ -11,4 +11,6 @@ comment3.params=dato\ dato1
 comment3.target=void\ getEstadoUsuario(Usuario,\ Alimento)
 comment4.params=usuario1\ alimento1\ usuario2\ alimento2
 comment4.target=void\ comparar(Usuario,\ Alimento,\ Usuario,\ Alimento)
-numComments=5
+comment5.params=nombreAlimento
+comment5.target=void\ addNombre(Alimento)
+numComments=6

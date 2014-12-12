@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Simula la clase usuario
  */
@@ -6,10 +6,12 @@ public class Usuario
 {
     //Atributo del nombre del usuario
     private String nombreUsuario;
+    //Atributo que señala el nombre del alimento ingerido
     private Alimento alimentoComido;
+    //Atributo que señala la cantidad de comida que ingiere el usuario
     private float cantidadComida;
-    
-
+    //Lista para guardar nombres de alimentos ingeridos por el usuario
+    private ArrayList<Alimento> nombre;
     /**
      * Constructor de la clase usuario
      */
@@ -18,6 +20,7 @@ public class Usuario
         this.nombreUsuario=nombreUsuario;
         alimentoComido=null;
         cantidadComida=0;
+        nombre= new ArrayList<Alimento>();
     }
     public String getNombre()
     {
@@ -59,5 +62,9 @@ public class Usuario
             System.out.println("El usuario"+" "+ usuario2.getNombre()+" ha consumido mas calorias que el usuario "+usuario1.getNombre());
         }
     }
-    
+    public void addNombre(Alimento nombreAlimento)
+    {
+        nombre.add(nombreAlimento);
+    }
+
 }
